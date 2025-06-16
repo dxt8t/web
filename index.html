@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتدى الأمن السيبراني</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scrollbar-color: #00c3ff #eaf1ff;
+            scrollbar-width: thin;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="im/شعار القسم.png" alt="شعار الموقع" />
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#topics"><i class="fas fa-list-ul"></i> المواضيع</a></li>
+                <li><a href="#about"><i class="fas fa-users"></i> عن المنتدى</a></li>
+                <li><a href="#services"><i class="fas fa-gamepad"></i> العاب</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+                <li><a href="http://127.0.0.1:5500/index2.html"><i class="fas fa-user-friends"></i> مطورون</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-theme" class="theme-toggle-3d" title="تبديل الوضع" aria-label="تبديل الوضع">
+            <span class="toggle-inner">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </span>
+        </button>
+    </header>
+
+    <section class="about-section" id="home">
+        <div class="about-content">
+            <div class="about-text">
+                <span class="badge"><i class="fas fa-shield-alt"></i> قسم الأمن السيبراني</span>
+                <h1 id="typewriter"></h1>
+                <hr class="decor-line">
+                <p>
+                    يهدف هذا القسم إلى تعزيز الوعي والمعرفة في مجال الأمن السيبراني، وتقديم أحدث المعلومات حول حماية المعلومات والشبكات من المخاطر الرقمية. ستجد هنا مواضيع تعليمية، نصائح، وأخبار متجددة تساعدك على فهم عالم الأمن السيبراني بشكل أفضل.
+                </p>
+                <a href="#topics" class="about-btn">تعرف أكثر</a>
+            </div>
+            <div class="about-image">
+                <img src="im/الصوره الاوله لموقع فجما.png" alt="توضيح الأمن السيبراني">
+            </div>
+        </div>
+    </section>
+
+    <section class="topics-section" id="topics">
+        <div class="topics-filter">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="مبتدئ">مبتدئ</button>
+            <button class="filter-btn" data-filter="مهم">مهم</button>
+            <button class="filter-btn" data-filter="نصائح">نصائح</button>
+            <button class="filter-btn" data-filter="توعية">توعية</button>
+            <button class="filter-btn" data-filter="تطبيقات">تطبيقات</button>
+            <button class="filter-btn" data-filter="معلومة">معلومة</button>
+        </div>
+        <p class="topics-desc">اكتشف أحدث المواضيع والنصائح في عالم الأمن السيبراني!</p>
+        <h2><i class="fas fa-list-ul"></i> المواضيع المميزة <span class="topics-count">(12 موضوع)</span></h2>
+        <div class="topics-list">
+            <div class="topic-card" data-category="مبتدئ">
+                <span class="topic-badge" title="مبتدئ">مبتدئ</span>
+                <img src="im/Cyber-Security-Course1-1.png" alt="موضوع 1"  width="200px" height="200px">   
+                <h3><i class="fas fa-lock"></i> أساسيات الأمن السيبراني</h3>
+                <p>تعرف على المبادئ الأساسية لحماية نفسك ومعلوماتك في العالم الرقمي.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="مهم">
+                <span class="topic-badge" title="مهم">مهم</span>
+                <img src="im/protection-against-cyber-attacks03.jpg.webp" alt="موضوع 2" width="200px" height="200px">
+                <h3><i class="fas fa-bug"></i> الهجمات الشائعة وطرق الوقاية</h3>
+                <p>اكتشف أشهر أنواع الهجمات الإلكترونية وكيفية التصدي لها بفعالية.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="نصائح">
+                <span class="topic-badge" title="نصائح">نصائح</span>
+                <img src="im/كيف تحمي خصوصيتك على الانترنيت.webp" alt="موضوع 3" width="200px" height="200px">
+                <h3><i class="fas fa-key"></i> نصائح لحماية حساباتك</h3>
+                <p>أفضل الممارسات لإنشاء كلمات مرور قوية وتأمين حساباتك الشخصية.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="توعية">
+                <span class="topic-badge" title="توعية">توعية</span>
+                <img src="im/كيف تحمي خصوصيتك على الانترنيت.webp" alt="موضوع 4" width="200px" height="200px">
+                <h3><i class="fas fa-user-shield"></i> كيف تحمي خصوصيتك على الإنترنت</h3>
+                <p>تعلم خطوات بسيطة وفعالة للحفاظ على خصوصيتك أثناء تصفح الإنترنت واستخدام التطبيقات.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="تطبيقات">
+                <span class="topic-badge" title="تطبيقات">تطبيقات</span>
+                <img src="im/Antivirus-Apps-Android.webp" alt="موضوع 5" width="200px" height="200px">
+                <h3><i class="fas fa-mobile-alt"></i> أفضل تطبيقات الحماية للجوال</h3>
+                <p>استكشف أهم التطبيقات التي تساعدك في حماية هاتفك الذكي من الفيروسات والاختراقات.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="معلومة">
+                <span class="topic-badge" title="معلومة">معلومة</span>
+                <img src="im/بحث-كامل-عن-الأمن-السيبراني.jpg" alt="موضوع 6" width="200px" height="200px">
+                <h3><i class="fas fa-lightbulb"></i> حقائق سريعة عن الأمن السيبراني</h3>
+                <p>اكتشف معلومات وحقائق قد تدهشك حول عالم الأمن السيبراني وأهميته في حياتنا اليومية.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="مبتدئ">
+                <span class="topic-badge" title="مبتدئ">مبتدئ</span>
+                <img src="im/أساسيات-الأمن-السيبراني.webp" alt="موضوع 7" width="200px" height="200px">
+                <h3><i clasiss="fas fa-user-graduate"></i> دليلك للبدء في الأمن السيبراني</h3>
+                <p>خطوات عملية للمبتدئين لدخول عالم الأمن السيبراني بثقة.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="مهم">
+                <span class="topic-badge" title="مهم">مهم</span>
+                <img src="im/WhatsApp-Image-2023-04-27-at-4.51.57-PM.jpeg" alt="موضوع 8" width="200px" height="200px">
+                <h3><i class="fas fa-exclamation-triangle"></i> أشهر الثغرات الأمنية</h3>
+                <p>تعرف على الثغرات التي يستغلها المخترقون وكيفية تجنبها.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="نصائح">
+                <span class="topic-badge" title="نصائح">نصائح</span>
+                <img src="im/أهم-النصائح-لأمان-الإنترنت-.jpg" alt="موضوع 9" width="200px" height="200px">
+                <h3><i class="fas fa-shield-alt"></i> نصائح لتصفح آمن</h3>
+                <p>طرق بسيطة وفعالة لتصفح الإنترنت بأمان وحماية بياناتك.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="توعية">
+                <span class="topic-badge" title="توعية">توعية</span>
+                <img src="im/-لحماية-حسابك-في-خمسات.jpg" width="200px" height="200px">
+                <h3><i class="fas fa-eye"></i> مخاطر مشاركة المعلومات الشخصية</h3>
+                <p>لماذا يجب أن تكون حذرًا عند مشاركة بياناتك على الإنترنت؟</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 55%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="تطبيقات">
+                <span class="topic-badge" title="تطبيقات">تطبيقات</span>
+                <img src="im/برامج لحمايه الحاسوب.jpg" alt="موضوع 11">
+                <h3><i class="fas fa-desktop"></i> برامج حماية الحاسوب</h3>
+                <p>أفضل البرامج التي تساعدك في حماية جهازك من الفيروسات والاختراقات.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="topic-card" data-category="معلومة">
+                <span class="topic-badge" title="معلومة">معلومة</span>
+                <img src="im/هجمات-التصيد-الإلكتروني-1.jpg" alt="موضوع 12" width="200px" height="200px">
+                <h3><i class="fas fa-question-circle"></i> ماذا تعرف عن التصيد الإلكتروني؟</h3>
+                <p>معلومات مهمة حول هجمات التصيد وكيفية اكتشافها وتجنبها.</p>
+                <!-- مثال داخل بطاقة -->
+                <div class="topic-progress">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="topics-more-btn"><i class="fas fa-arrow-left"></i> عرض جميع المواضيع</a>
+        <div class="topics-wave">
+            <svg viewBox="0 0 500 60" preserveAspectRatio="none">
+                <path class="wave1" d="M0,30 Q250,80 500,30 L500,60 L0,60 Z" fill="url(#waveGradient)" />
+                <path class="wave2" d="M0,40 Q250,60 500,40 L500,60 L0,60 Z" fill="#eaf1ff" opacity="0.7"/>
+                <defs>
+                    <linearGradient id="waveGradient" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#00c3ff"/>
+                        <stop offset="100%" stop-color="#0043fa"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+    <section class="about-forum-section" id="about">
+    <div class="about-forum-content">
+        <div class="about-forum-text">
+            <h2><i class="fas fa-users"></i> عن المنتدى</h2>
+            <p>
+                منتدى الأمن السيبراني هو مساحة تفاعلية تهدف إلى نشر الوعي والمعرفة حول حماية المعلومات والشبكات. يجمع المنتدى بين الخبراء والهواة لتبادل الخبرات، طرح الأسئلة، ومناقشة أحدث التطورات في عالم الأمن الرقمي.
+            </p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> نقاشات مفتوحة حول أحدث التهديدات والحلول.</li>
+                <li><i class="fas fa-check-circle"></i> دروس وورش عمل تعليمية لجميع المستويات.</li>
+                <li><i class="fas fa-check-circle"></i> مجتمع داعم ومتعاون يرحب بالجميع.</li>
+            </ul>
+            <!-- الإحصائيات -->
+            <div class="forum-stats">
+                <div>
+                    <i class="fas fa-users"></i>
+                    <span>1500+</span>
+                    <p>عضو نشط</p>
+                </div>
+                <div>
+                    <i class="fas fa-comments"></i>
+                    <span>320</span>
+                    <p>موضوع</p>
+                </div>
+                <div>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>45</span>
+                    <p>دورة وورشة</p>
+                </div>
+            </div>
+            <!-- الاقتباس -->
+            <blockquote class="forum-quote">
+                <i class="fas fa-quote-right"></i>
+                <span>معًا نبني مجتمعًا رقميًا أكثر أمانًا ووعيًا.</span>
+            </blockquote>
+        </div>
+        <div class="about-forum-image">
+        </div>
+    </div>
+</section>
+    <section class="games-section" id="services">
+        <h2><i class="fas fa-gamepad"></i> ألعاب الأمن السيبراني</h2>
+        <p class="games-desc">اختبر معلوماتك وطور مهاراتك في الأمن السيبراني من خلال ألعاب تعليمية ممتعة!</p>
+        <div class="games-list">
+            <div class="game-card">
+                <span class="game-badge">جديد</span>
+                <img src="im/game1.png" alt="لعبة 1">
+                <h3><i class="fas fa-puzzle-piece"></i> تحدي كلمات المرور</h3>
+                <div class="game-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="game-plays"><i class="fas fa-users"></i> 1200 لاعب</div>
+                <p>هل يمكنك اكتشاف كلمة المرور الأقوى؟ جرب مهاراتك في إنشاء كلمات مرور آمنة.</p>
+                <a href="#" class="game-btn" title="ابدأ التحدي الآن!">ابدأ اللعب</a>
+            </div>
+            <div class="game-card">
+                <span class="game-badge">جديد</span>
+                <img src="im/game2.png" alt="لعبة 2">
+                <h3><i class="fas fa-bug"></i> صائد الفيروسات</h3>
+                <div class="game-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="game-plays"><i class="fas fa-users"></i> 900 لاعب</div>
+                <p>اختبر سرعتك في اكتشاف الفيروسات والبرمجيات الخبيثة قبل أن تنتشر!</p>
+                <a href="#" class="game-btn" title="ابدأ التحدي الآن!">ابدأ اللعب</a>
+            </div>
+            <div class="game-card">
+                <span class="game-badge">جديد</span>
+                <img src="im/game3.png" alt="لعبة 3">
+                <h3><i class="fas fa-shield-alt"></i> حماية الشبكة</h3>
+                <div class="game-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="game-plays"><i class="fas fa-users"></i> 300 لاعب</div>
+                <p>قم ببناء جدار حماية قوي وصد الهجمات الإلكترونية في لعبة استراتيجية ممتعة.</p>
+                <a href="#" class="game-btn" title="ابدأ التحدي الآن!">ابدأ اللعب</a>
+            </div>
+        </div>
+        <a href="#" class="games-more-btn"><i class="fas fa-arrow-left"></i> عرض جميع الألعاب</a>
+    </section>
+            <!-- الصف الأول (من اليسار لليمين) -->
+<div class="floating-icons-horizontal">
+    <img src="im/icon1.png" class="float-icon-horizontal" style="--i:1;">
+    <img src="im/icon2.png" class="float-icon-horizontal" style="--i:2;">
+    <img src="im/icon3.png" class="float-icon-horizontal" style="--i:3;">
+    <img src="im/icon4.png" class="float-icon-horizontal" style="--i:4;">
+    <img src="im/icon5.png" class="float-icon-horizontal" style="--i:5;">
+    <img src="im/icon6.png" class="float-icon-horizontal" style="--i:6;">
+    <img src="im/icon7.png" class="float-icon-horizontal" style="--i:7;">
+    <img src="im/icon8.png" class="float-icon-horizontal" style="--i:8;">
+    <img src="im/icon9.png" class="float-icon-horizontal" style="--i:9;">
+    <img src="im/icon10.png" class="float-icon-horizontal" style="--i:10;">
+</div>
+<!-- الصف الثاني (من اليمين لليسار) -->
+<div class="floating-icons-horizontal-reverse">
+    <img src="im/figma.jpg" class="float-icon-horizontal-reverse" style="--i:1;">
+    <img src="im/canva.jpg" class="float-icon-horizontal-reverse" style="--i:2;">
+    <img src="im/spline.jpg" class="float-icon-horizontal-reverse" style="--i:3;">
+    <img src="im/ilovimeg.png" class="float-icon-horizontal-reverse" style="--i:4;">
+    <img src="im/adobe.png" class="float-icon-horizontal-reverse" style="--i:5;">
+    <img src="im/seaArt.webp" class="float-icon-horizontal-reverse" style="--i:6;">
+    <img src="im/womp3d_logo.jpg" class="float-icon-horizontal-reverse" style="--i:7;">
+    <img src="im/odoo.png" class="float-icon-horizontal-reverse" style="--i:8;">
+    <img src="im/dribble.jpg" class="float-icon-horizontal-reverse" style="--i:9;">
+    <img src="im/Hostinger.png" class="float-icon-horizontal-reverse" style="--i:10;">
+
+</div>
+    <script>
+    // زر الفلاتر للمواضيع
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.getAttribute('data-filter');
+            document.querySelectorAll('.topic-card').forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+ 
+
+    // الوضع الليلي والنهاري تلقائي وزر التبديل
+    const toggleBtn = document.getElementById('toggle-theme');
+    const toggleInner = toggleBtn.querySelector('.toggle-inner');
+    function setTheme(mode) {
+        if(mode === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleInner.style.transform = 'rotateY(180deg)';
+        } else {
+            document.body.classList.remove('dark-mode');
+            toggleInner.style.transform = 'rotateY(0deg)';
+        }
+    }
+    (function() {
+        if(localStorage.getItem('theme')) {
+            setTheme(localStorage.getItem('theme'));
+        } else {
+            const hour = new Date().getHours();
+            if(hour >= 19 || hour < 7) {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+        }
+    })();
+    toggleBtn.onclick = function() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        toggleInner.style.transform = isDark ? 'rotateY(180deg)' : 'rotateY(0deg)';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    };
+</script>
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+    <!-- أضف في نهاية الـ body -->
+<script>
+// عرض المودال عند تحميل الصفحة
+window.onload = function() {
+    document.getElementById('welcomeModal').style.display = 'block';
+}
+
+// إغلاق المودال عند الضغط على زر الإغلاق
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('welcomeModal').style.display = 'none';
+}
+
+// إغلاق المودال عند النقر خارج المحتوى
+window.onclick = function(event) {
+    const modal = document.getElementById('welcomeModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-- قسم تواصل معنا -->
+<section class="contact-section" id="contact">
+    <h2><i class="fas fa-envelope"></i> تواصل معنا</h2>
+    <p class="contact-desc">لأي استفسار أو اقتراح، يمكنك التواصل معنا عبر النموذج أو عبر وسائل التواصل الاجتماعي.</p>
+    <form class="contact-form">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+    <div class="contact-social">
+        <a href="#" title="انستجرام"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" title="تلجرام"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+</section>
+</body>
+</html>
